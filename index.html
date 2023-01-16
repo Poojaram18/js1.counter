@@ -1,0 +1,85 @@
+<html>
+    <style type="text/css" media="all">
+    button{
+        font-size: 26px;
+    }
+    #btn1{
+        box-sizing: border-box;
+        
+        position: relative;
+        width: 80px;
+        height: 72px;
+        left: 190px;
+        top: 227px;
+        
+        background: #F32ABB;
+        border: 5px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+
+    }
+    #btn3{
+        box-sizing: border-box;
+        
+        position: relative;
+        width: 80px;
+        height: 72px;
+        left: 393px;
+        top: 227px;
+        
+        background: #F32ABB;
+        border: 5px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+
+    }
+    #btn2{
+        position: absolute;
+        width: 109px;
+        height: 50px;
+        left: 319px;
+        top: 327px;
+        
+        background: #086C1E;
+        border-radius: 37px;
+    }
+    label{
+        position: absolute;
+        width: 281px;
+        height: 294px;
+        left: 230px;
+        top: 104px;
+        background: #00FFF0;
+        text-align: center;
+        font-size: 124px;
+        border:3px double black;
+    }
+    
+    </style>
+<body>
+    <div>
+    <label id="countLabel">0</label><br>
+    <button id="Btn1" onclick="fun()">+</button>
+    <button id="Btn2" onclick="fun1()">reset</button>
+    <button id="Btn3" onclick="fun2()">-</button>
+    </div>
+<script>
+{
+    let count=0;
+    function fun(){
+    count+=1;
+    document.getElementById("countLabel").innerHTML = count;   
+    }
+    function fun1(){
+    count=0;
+    document.getElementById("countLabel").innerHTML = count;   
+    }
+    function fun2(){
+    count-=1;
+    document.getElementById("countLabel").innerHTML = count;
+    }
+  }
+    
+
+    
+</script>
+</body>
+</html>
